@@ -1,0 +1,22 @@
+body {
+    min-width: 320px;
+    max-width: 2560px;
+    margin: auto;
+    /* background-color: #1A2A57; */
+}
+
+.navbar .MuiPaper-root.MuiMenu-paper{
+    border-radius: 0 !important;
+}
+
+.navbar .MuiPaper-root ul {
+    padding: 15px 0px;
+}
+
+.navbar .MuiPaper-root ul > li{
+    padding: 5px 15px;
+}
+.navbar .MuiPaper-root ul > li:hover{
+    background-color: #9CADCB;
+}
+

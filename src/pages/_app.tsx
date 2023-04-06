@@ -1,6 +1,14 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/global.css";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "@emotion/react";
+import { CssBaseline } from "@mui/material";
+import theme from "@/styles/theme";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+	return (
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+			<Component {...pageProps} />
+		</ThemeProvider>
+	);
 }
